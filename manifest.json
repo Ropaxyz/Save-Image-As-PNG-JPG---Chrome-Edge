@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Save Image As PNG/JPG",
+  "version": "1.0.0",
+  "description": "Right-click any image and save it as PNG or JPG (decodes via an offscreen canvas).",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
